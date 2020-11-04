@@ -1,0 +1,17 @@
+#+TITLE: Simulación basada en agentes
+
+* Modelos para fenómenos sociales
+
+** Agentes
+Un poco más generales que autómatas.
+Entidades en celdas. Se mueven. Reglas dinámicas. Heterogéneos.
+
+** Segregación.
+
+Schelling, premio Nobel en economía. Modelo decentralizado para entender
+segregación
+
+Hay dos tipos de personas en una malla.
+
+Una persona se mudará (a una celda vacía arbitraria) si menos de $p$ porciento
+de sus vecinos son de otra clase.

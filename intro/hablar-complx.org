@@ -1,0 +1,9 @@
+#+TITLE: ¿Cómo hablar de Complejidad?cite:gershenson13_como_hablar_complx
+#+SUBTITLE: Modelación basada en Agentes 2021-1
+#+OPTIONS: toc:nil
+#+AUTHOR: Edgar
+#+DATE: 2 de octubre del 2021
+
+
+[[bibliography:../refs.bib][Referencias]]
+[[bibliographystyle:plain][Estilo]]
