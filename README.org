@@ -1,5 +1,150 @@
 #+TITLE: Simulación basada en agentes
 
+Aritificial Life Langton 1987
+
+Estudiar sistemas artificales con caracteristicas similares a los sistemas vivos
+
+Bottom up.
+- Definir reglas para el sistema que que exhiba emergencia
+
+Game of life Conway 1970
+- Celda muerta con tres vecinos vivos nace
+- Celda con uno o menos vecinos muere por soledad
+- Celda con cuatro o más vecinos muere por sobrepoblación
+Turing Completo
+
+Von Neumann: Debe existir una máquina de Turing capaza de simular procesos
+biológicos
+
+Loop de Langton 1984
+Autómata celular autoreplicable con 8 reglas
+
+Biological automata (wetware)
+
+GTYPE PTYPE
+
+Genetic algorithms John Holland 1975
+
+Evolving creatures Karl Sims 1994
+
+* Autómatas celulares
+
+** Historia
+Turing decisión
+
+Gödel completidud
+
+Von Neuman autómatas celulares
+
+? retículas
+
+Langton
+
+Wolfram dinámica de autómatas
+
+** Definición
+
+$\{0, 1\}$ estados.
+
+$a_i(t)$ es el estado de la celda $i$ en el instante $t$.
+
+$a_i(t+1) = F(a_{i-a}, a_i(t), a_{i+1}(t)$ función de transición.
+
+Hay $2^3$ entradas (pues hay tres bits). Así que hay $2^{2^3} = 256$ posibles
+funciones $F$. Se pueden indentificar del 0 al 255.
+
+- Regla 110: Turing completa
+
+** Clasificaciónde Wolfram
+- Punto fijo
+- Estructuras periódicas
+- Patrones caóticos y estructuras fractales
+- Estructuras complejas
+
+Conjetura de borde del caos (Langton): se pueden ordenar las reglas en base a su
+desorden. Las reglas complejas están en la frontera entre orden y desorden.
+
+** Juego de la vida
+
+Autómatas bidimencionales Turing completo.
+
+Retícula de $m\times n$ con vecindades de Moore.
+
+Estructuras estables y dinámicas
+
+*** Turing completez
+
+
+- Pulsos: gliders
+- Cables: trayectorias de gliders
+- Reloj: pistolas y eaters
+- Compuertas: demás estrucutras estables
+
+
+* Loop de Langton
+
+- 2: coraza
+  - 1: núcleo
+    - 7: destruye coraza
+      - 6: crea coraza
+        - 4: copia
+* Modelos
+
+Predictivo y descriptivo
+
+Ciclo de modelación, simulación y validación
+
+** Regeneración de bosques
+Iwaza: surmiento de franjas de árboles muertos en boques de abetos
+¿Terreno, viento, recursos?
+
+Modelación con autómatas celulares. $S_t(i, j)$ la altura del árbol $i, j$ en el
+tiempo $t$. En cada tiempo crece hasta que alcanza un umbral de altura, y luego
+muere.
+
+Este umbral depende del promedio de altura de la vecindad. Esta vecindad depende
+de la dirección del viento.
+
+** Clasificación a grandes rastos
+
+Entrada, salida, modelo interno
+
+Bottom up, top down
+
+*** Optimización
+
+Se tiene un modelo y la salida desea (o al menos caracterizada). Se quiere
+buscar la entrada, como TSP.
+
+*** Modelación
+
+Se tienen las entradas y las salidas, como el mercado de valores.
+
+*** Simulación
+
+Se tiene la entrada, el modelo y se busca la salida. Es lo que más se ha hecho
+en el curso.
+
+* Fractales
+
+Mandelbrot: la naturaleza no es regular.
+
+Un fractal es un objeto geométrico cuya estrucutra se repite a diferentes
+escalas.
+
+- Demasiado irregluar para ser descrito de otra manera
+- Es autosimilar
+- Se puede definir recursivamente
+
+** Box counting
+
+En qué dimensión está un objeto
+
+** Ejemplos
+
+Atractor de Lorenz, conjuntos de Julia, autómatas celulares, construcciones
+geométricas.
+
 * Modelos para fenómenos sociales
 
 ** Agentes
@@ -15,3 +160,208 @@ Hay dos tipos de personas en una malla.
 
 Una persona se mudará (a una celda vacía arbitraria) si menos de $p$ porciento
 de sus vecinos son de otra clase.
+
+** Disparidad económica
+
+Willensky.
+Person con ingreso alto/bajo. Suelo sin usar/costoso/barato.
+
+
+Prámetros
+    - Prioridad de precio/localización para personas de ingreso alto.
+    - Prioridad de calidad/localización para personas de alto ingreso.
+
+** Epidemias
+
+Modelo SIR.
+- $S(t)$ personas suceptibles (tal vez con diferentes grupos).
+- $I(t)$ personas infectadas y capaces de infectar
+- $R(t)$ personas recuperadas (tal vez inmunes).
+
+*** Kermanck-McKendrick
+
+Población cerrada y homogénea. Tiempo de incubación instantáneo. Todo contagiado
+contagia.
+
+Un tiempo $t$, un ritmo de infección $\beta$ y un valor de recuperación
+$\gamma$ y $R_0$ personas infectadas por contacto con una persona contagiosa.
+
+
+* Sincronización
+
+Fenómeno que coinciden en el tiempo.
+
+Puente de Tacoma: osilaciones del puente retroalimentadas por el viento.
+Puente del Milenio: osilaciones del puento forzaron sincronización en los pasos
+de los peatones que a su vez aumentaba las oscilaciones del puente.
+
+Ambos son ejemplos d sincronización de eventos.
+
+Sincronización de metrónomos.
+
+Nanacamilpa, Tlaxcala, aglomeración de luciérnagas sincronizadas en sus
+destellos.
+
+Usar esto fenómenos para sincronizar fenómenos sociales, como el mentro.
+
+Osciladores de Kuramoto. Sincronización requiere un reloj implícito.
+
+Series cardiacas en el juego del caos se sincronizan (con atractores) si es un
+corazón sano.
+
+* Prisionero iterador
+
+Teoría de Juegos: incentivos y castigos. Theory of Games and Economic behavior.
+
+Como las interacciones entre individuos alteran el comportamiento.
+
+** Suma cero
+Hay un ganador y un perdedor. Ajerez, Go, póker.
+
+** Suma no nula
+Cada jugador intenta maximizar su puntuación, sin importar del puntaje de los
+demás. Como el dilema del prisonero.
+
+** Planteamiento
+$A$ y $B$ son prisioneros interrogados por separado.
+
+Si se acusan mútuamente ambos tendrán tres años de sentencia. Si ninguno se
+acusa endrán un año. Si sólo uno acusa, será libre y el otro tendrá cinco años.
+
+|          | Coopera      | Abadona       |
+|----------+--------------+---------------|
+| Coopera  | $R, R$       | $S, T$        |
+| Abandona | $T, S$       | $P, P$        |
+
+Esta es la matriz de pagos para $DPI$.
+Si se juega muchas veces, pueden surgir extrategias.
+
+** Mejor estrategia empírica
+Rapaport. Tit for tat.
+Iniciar colaborando, y después replicar la acción del oponente en el turno
+anterior.
+
+- Ser bueno
+- Ser provocativo
+- No ser envidioso
+- No ser demasiado ingenioso
+
+** Estrategias deterministas
+
+Definirla como una función que toma como entradas los resultados de las $k$
+jugadas anteriores y dé como salida la próxima elección.
+
+Hay $2^{2^{2k}}$ posibles estrategias deterministas.
+
+* Algoritmos genéticos
+
+John Holland 70, Adaptation in Natural and Aritifial Systems
+Introduction to Evolutionary Computing, Eiben, Smith
+
+Computación evolutiva, metahueristicas para problemas $NP-Completos$.
+
+** $P$ y $NP$
+
+A cada algoritmo se le puede asignar una función que mida cuanto tarda en
+ejecutar respecto al tamaño de la entrada. Una función de orden exponencial o
+similar tendría un tiempo de ejecución demasiado grande, al punto que no sea
+factible.
+
+$P$ son algoritmos con ejeución en tiempo polinomial, aceptable
+$NP$ hasta exponencial, no factible
+
+Conjectura $P \neq NP$.
+
+Algunos problemas $NP-Completos$
+
+- Problema del agente viajero
+- Problema de la mochila
+- $K$-coloración
+- Satisfacibilidad booleana
+- Asignación de horarios
+
+** Hormiga artificial
+
+En una retícula hay un rastro (de Santa Fé) donde hay comida. Una hormiga debe
+comer toda la comida en el menor tiempo posible. Para esto debe tener una
+estrategia. Encontrar la mejor estrategia es $NP-Completo$.
+
+Instruciones: $LEFT, RIGHT, MOVE$
+Funciones: $IF_FOOD, PROGN2, PROGN3$.
+
+** Variaciones de algoritmos genéticos
+
+- Elitismo
+- Autoadaptable:
+- Coevolutivo: diferentes poblaciones que compiten
+- Ecléctico:
+- Híbrido: con búsqueda local
+
+** Bases de genética
+
+Fenotipo: expresión de los rasgos
+
+*** Génotipo
+Codificación de los rasgos. Constituido por genómas con nucleótidos: Adenina,
+Timina, Citosina y Guanina. Un gen es la condificación de cierta función. El ADN
+es el conjunto de todos los genes.
+
+*** Población
+Conjunto de individuos que interactúan con su ambiente. Tienen cierta aptitud y
+pueden realizar ciertas acciones.
+
+*** Entonrno
+
+*** Selección
+
+*** Reproducción
+Sexual o asexual
+
+** Algorítmo evolutivo estándar
+
+1. Inicia población
+2. Evalúa cada candidato
+3. Repetir hasta satisfacer condición de terminación
+   1. Selecciona individuos de la población
+   2. Recombina la selección
+   3. Muta los recombinados
+   4. Evalua los mutados
+   5. Selecciona de los mutados para construir la siguiente generación
+
+Hiperparámetros:
+- Tamaño de la población (100 a 500)
+- Probabilida de cruz (0.5)
+- Probabilidad de mutación (0.01), bajo para preservar las características de
+  los padres.
+
+Operadores genéticos
+- Recombinación: partes los genómas y se pegan para formar el genóma del hijo.
+- Mutación: iterar sobre el gen y cambiar alguno con la probabilidad dada
+
+Codificaciones: binarios, enteros, punto flontante, permutación
+
+** Las 8 reinas
+
+8 reinas deben estar en un tablero de ajedrez sin que se amenacen. Una solución
+clásica es con backtracking.
+
+*** Fenotipos
+
+Medida $q(p)$, el costo de la configuración $p$, i.e. el conteo de las reinas en
+conflicto.
+
+Y definir ~fitness~ usando $q(p)$. Puede ser el recíproco o el inverso. Depende
+del problema.
+
+*** Genotipos
+
+En este caso, como permutaciones de los renglones.
+
+*** Recombinación y mutación
+
+Para mutar, intercambiar dos mapeos en la permutación matienen un apermutación
+válida. Opertador ~swap~.
+
+Para recombinación, se toman dos individuos. Se toma la primera mitad de un
+padre y se "rellena" la segunda mitad usando los elementos en el orden en el que
+los tiene el otro padre. Operador ~cut & crossfill~.

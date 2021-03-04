@@ -1,0 +1,324 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{Dorigo_2006}{article}{}
+      \name{author}{3}{}{%
+        {{hash=26c8dbd8b76182fc666371044ae8dfa4}{%
+           family={Dorigo},
+           familyi={D\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=97c2ed3dc5dc65fd915a8be83f7011dc}{%
+           family={Birattari},
+           familyi={B\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=42ddf839ce48ec40374de21a5b571a29}{%
+           family={Stutzle},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{c44987204222757208b419d5804eceea}
+      \strng{fullhash}{c44987204222757208b419d5804eceea}
+      \strng{bibnamehash}{c44987204222757208b419d5804eceea}
+      \strng{authorbibnamehash}{c44987204222757208b419d5804eceea}
+      \strng{authornamehash}{c44987204222757208b419d5804eceea}
+      \strng{authorfullhash}{c44987204222757208b419d5804eceea}
+      \field{labelalpha}{DBS06}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1556-603X}
+      \field{journaltitle}{IEEE Computational Intelligence Magazine}
+      \field{month}{11}
+      \field{number}{4}
+      \field{title}{Ant colony optimization}
+      \field{volume}{1}
+      \field{year}{2006}
+      \field{pages}{28\bibrangedash 39}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/mci.2006.329691
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/MCI.2006.329691
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/MCI.2006.329691
+      \endverb
+    \endentry
+    \entry{Demaine_2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=30a06bf5f3263989d79d20f48ddf828c}{%
+           family={Demaine},
+           familyi={D\bibinitperiod},
+           given={Erik\bibnamedelima D.},
+           giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f5bd0ff9ce7126e6a0ef20429e8b7bab}{%
+           family={Eisenstat},
+           familyi={E\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7a8a7ab70bcccf028bd89df769eb1bfd}{%
+           family={Rudoy},
+           familyi={R\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Schloss Dagstuhl - Leibniz-Zentrum fuer Informatik GmbH, Wadern/Saarbruecken, Germany}%
+      }
+      \strng{namehash}{0d36bd16d5074f26dab1cca250456006}
+      \strng{fullhash}{0d36bd16d5074f26dab1cca250456006}
+      \strng{bibnamehash}{0d36bd16d5074f26dab1cca250456006}
+      \strng{authorbibnamehash}{0d36bd16d5074f26dab1cca250456006}
+      \strng{authornamehash}{0d36bd16d5074f26dab1cca250456006}
+      \strng{authorfullhash}{0d36bd16d5074f26dab1cca250456006}
+      \field{labelalpha}{DER18}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Solving the Rubik's Cube Optimally is NP-complete}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.4230/LIPICS.STACS.2018.24
+      \endverb
+      \verb{urlraw}
+      \verb http://drops.dagstuhl.de/opus/volltexte/2018/8533/
+      \endverb
+      \verb{url}
+      \verb http://drops.dagstuhl.de/opus/volltexte/2018/8533/
+      \endverb
+      \keyw{Computer Science,000 Computer science,knowledge,general works}
+    \endentry
+    \entry{Dorigo_1996}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d1ad206d110b9398571ff21dbdf38e32}{%
+           family={Dorigo},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fcbefe55fbed5ef210e5cd6994658833}{%
+           family={Maniezzo},
+           familyi={M\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a50d6d554d44d2b62011eac46ba92cd1}{%
+           family={Colorni},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{dba699146f02ecc41d0daae227d4bff7}
+      \strng{fullhash}{dba699146f02ecc41d0daae227d4bff7}
+      \strng{bibnamehash}{dba699146f02ecc41d0daae227d4bff7}
+      \strng{authorbibnamehash}{dba699146f02ecc41d0daae227d4bff7}
+      \strng{authornamehash}{dba699146f02ecc41d0daae227d4bff7}
+      \strng{authorfullhash}{dba699146f02ecc41d0daae227d4bff7}
+      \field{labelalpha}{DMC96}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1941-0492}
+      \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Ant system: optimization by a colony of cooperating agents}
+      \field{volume}{26}
+      \field{year}{1996}
+      \field{pages}{29\bibrangedash 41}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/3477.484436
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/3477.484436
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/3477.484436
+      \endverb
+    \endentry
+    \entry{langton84_self_reprod_cellul_autom}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d9bd6e41b449e510633eda365b920814}{%
+           family={Langton},
+           familyi={L\bibinitperiod},
+           given={Christopher\bibnamedelima G.},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9bd6e41b449e510633eda365b920814}
+      \strng{fullhash}{d9bd6e41b449e510633eda365b920814}
+      \strng{bibnamehash}{d9bd6e41b449e510633eda365b920814}
+      \strng{authorbibnamehash}{d9bd6e41b449e510633eda365b920814}
+      \strng{authornamehash}{d9bd6e41b449e510633eda365b920814}
+      \strng{authorfullhash}{d9bd6e41b449e510633eda365b920814}
+      \field{labelalpha}{Lan84}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica D: Nonlinear Phenomena}
+      \field{number}{1-2}
+      \field{title}{Self-Reproduction in Cellular Automata}
+      \field{volume}{10}
+      \field{year}{1984}
+      \field{pages}{135\bibrangedash 144}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/0167-2789(84)90256-2
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/0167-2789(84)90256-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/0167-2789(84)90256-2
+      \endverb
+    \endentry
+    \entry{Miramontes_1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c4f2aaaf329e2d102d589dc4c4cbd17a}{%
+           family={Miramontes},
+           familyi={M\bibinitperiod},
+           given={Octavio},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{c4f2aaaf329e2d102d589dc4c4cbd17a}
+      \strng{fullhash}{c4f2aaaf329e2d102d589dc4c4cbd17a}
+      \strng{bibnamehash}{c4f2aaaf329e2d102d589dc4c4cbd17a}
+      \strng{authorbibnamehash}{c4f2aaaf329e2d102d589dc4c4cbd17a}
+      \strng{authornamehash}{c4f2aaaf329e2d102d589dc4c4cbd17a}
+      \strng{authorfullhash}{c4f2aaaf329e2d102d589dc4c4cbd17a}
+      \field{labelalpha}{Mir95}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1076-2787}
+      \field{journaltitle}{Complexity}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{Order-disorder transitions in the behavior of ant societies}
+      \field{volume}{1}
+      \field{year}{1995}
+      \field{pages}{56\bibrangedash 60}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1002/cplx.6130010313
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1002/cplx.6130010313
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/cplx.6130010313
+      \endverb
+    \endentry
+    \entry{10.5555/184223}{book}{}
+      \name{author}{1}{}{%
+        {{hash=233322a94fdc535f0974d3219e0defcf}{%
+           family={Resnick},
+           familyi={R\bibinitperiod},
+           given={Mitchel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{233322a94fdc535f0974d3219e0defcf}
+      \strng{fullhash}{233322a94fdc535f0974d3219e0defcf}
+      \strng{bibnamehash}{233322a94fdc535f0974d3219e0defcf}
+      \strng{authorbibnamehash}{233322a94fdc535f0974d3219e0defcf}
+      \strng{authornamehash}{233322a94fdc535f0974d3219e0defcf}
+      \strng{authorfullhash}{233322a94fdc535f0974d3219e0defcf}
+      \field{labelalpha}{Res94}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0262181622}
+      \field{title}{Turtles, Termites, and Traffic Jams: Explorations in Massively Parallel Microworlds}
+      \field{year}{1994}
+    \endentry
+    \entry{Schelling_1971}{article}{}
+      \name{author}{1}{}{%
+        {{hash=437acf28afb8c05b38d6de93b43ff96f}{%
+           family={Schelling},
+           familyi={S\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{437acf28afb8c05b38d6de93b43ff96f}
+      \strng{fullhash}{437acf28afb8c05b38d6de93b43ff96f}
+      \strng{bibnamehash}{437acf28afb8c05b38d6de93b43ff96f}
+      \strng{authorbibnamehash}{437acf28afb8c05b38d6de93b43ff96f}
+      \strng{authornamehash}{437acf28afb8c05b38d6de93b43ff96f}
+      \strng{authorfullhash}{437acf28afb8c05b38d6de93b43ff96f}
+      \field{labelalpha}{Sch71}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1545-5874}
+      \field{journaltitle}{The Journal of Mathematical Sociology}
+      \field{month}{7}
+      \field{number}{2}
+      \field{title}{Dynamic models of segregation†}
+      \field{volume}{1}
+      \field{year}{1971}
+      \field{pages}{143\bibrangedash 186}
+      \range{pages}{44}
+      \verb{doi}
+      \verb 10.1080/0022250x.1971.9989794
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1080/0022250X.1971.9989794
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/0022250X.1971.9989794
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

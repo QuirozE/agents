@@ -1,0 +1,19 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[1] Config.pm:315> INFO - Logfile is 'solucion.blg'
+[86] biber:330> INFO - === Thu Dec 17, 2020, 17:21:34
+[101] Biber.pm:415> INFO - Reading 'solucion.bcf'
+[179] Biber.pm:952> INFO - Found 7 citekeys in bib section 0
+[193] Biber.pm:4334> INFO - Processing section 0
+[205] Biber.pm:4523> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[206] bibtex.pm:1682> INFO - LaTeX decoding ...
+[220] bibtex.pm:1494> INFO - Found BibTeX data source 'refs.bib'
+[252] Utils.pm:395> WARN - month field 'Jul' in entry 'Schelling_1971' is not an integer - this will probably not sort properly.
+[275] Utils.pm:395> WARN - month field 'Jan' in entry 'Miramontes_1995' is not an integer - this will probably not sort properly.
+[286] Utils.pm:395> WARN - month field 'Feb' in entry 'Dorigo_1996' is not an integer - this will probably not sort properly.
+[294] Utils.pm:395> WARN - month field 'Nov' in entry 'Dorigo_2006' is not an integer - this will probably not sort properly.
+[322] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[322] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[322] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
+[335] bbl.pm:651> INFO - Writing 'solucion.bbl' with encoding 'UTF-8'
+[341] bbl.pm:754> INFO - Output to solucion.bbl
+[341] Biber.pm:128> INFO - WARNINGS: 4

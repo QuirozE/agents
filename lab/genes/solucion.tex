@@ -1,0 +1,180 @@
+\documentclass[twocolumn]{article}
+
+\usepackage[margin=1.5cm]{geometry}
+
+\usepackage[spanish]{babel}
+
+\usepackage{arev}
+
+\usepackage{hyperref}
+\usepackage[spanish]{cleveref}
+
+\title{
+  Modelación y simulación computacional basada en agentes\\
+  Práctica 3: Algoritmos evolutivos
+}
+
+\author{
+  Edgar Quiroz
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  Se presenta implementación de modelos de algoritmos genéticos y programación
+  evolutiva para resolver problemas de otpmización de funciones continuas, de
+  combinatoria y de juegos.
+\end{abstract}
+
+\section{Algoritmo Genético Simple}
+
+Implementar el esquema vist en clase del Algoritmo Genético Simple para
+maximizar funciones de dos variables considerando los siguientes puntos
+
+\begin{itemize}
+  \item Representación de los individuos: cadenas de bits
+  \item Inicialización de la población: a través de un generador de números
+    pseudo-aleatorios.
+  \item Tamaño de la población: constante
+  \item Condición de término: Dos opciones
+    \begin{itemize}
+      \item Número fijo de generaciones
+      \item Cuando ya no haya mejoría de los individuos
+    \end{itemize}
+  \item Mecanismo de selección: Proporicional a su aptitud (ruleta)
+  \item Recombinación: 1-crossover
+  \item Mutación: bitflip, misma probabilidad para todo el genotipo
+  \item Operador de reemplazo: generacional, es decir, se renueva toda la
+    población en la siguiente generación
+\end{itemize}
+
+Para encontrar el \textbf{máximo global} de la \textbf{función de Schwefel}
+(\cref{eq:schwfel}) para $d = 2$ en el intervalo $(-500 \times 500)^{2}$. Las
+soluciones deberán tener al menos seis decimalaies de precisión.
+
+\begin{equation}\label{eq:schwfel}
+  f(x_{1}, \dots, x_{d}) = \sum_{i = 1}^{d}{x_{i}\sin{(\sqrt{|x_{i}|})}}
+\end{equation}
+
+\subsection{Modelación}
+
+\subsection{Simulación}
+
+Establezca una población fija de 100 individuos, con tasa de recombinación en
+$pc = 0.5$, tasa de mutación $pm = 0.1$ y condición de término al finalizar 500
+generaciones.
+
+\begin{itemize}
+  \item ¿Cuál fue el mejor individuo? Reporte la estrcutura del genotipo,
+    fenotipo y fitness. ¿Es el máximo global?
+  \item Grafique la evolución de la mejor aptitud, aptitud promedio y fitness
+    promedio.
+  \item Graique en el plano $x, y$ los individuos de las generaciones 1, 10,
+    50, 100.
+\end{itemize}
+
+\subsection{Exploración}
+
+Genere otros experimentos cambiando la tasa de recombinacioń y de mutación.
+Grafique los puntos anteriores para las diferentes configuraciones. ¿Con qué
+parámetros se encuentra más rápido el máximo global?
+
+\section{Las ocho reinas}
+
+El problema de las ocho reinas consiste en colocar ocho reinas en un tablero de
+ajedrez si que se puedan capturar entre sí en un movimiento. El problema fue
+propuesto en 1848 por Max Bezzel. Tiene 92 posibles soluciones, contando
+reflexiones y rotaciones.
+
+Considere una solución con las siguientes características
+
+\begin{itemize}
+  \item Representación: Permutación
+  \item Recombinación: \texttt{cut \& crossfit} con probabilidad 1
+  \item Mutación: \texttt{swap} con probabilidad 0.8
+  \item Selección de padres: mejores 2 de 5 aleatorios
+  \item Operador de reemplazo: reemplazar a los peores
+  \item Tamaño de la población: 100 individuos
+  \item Inicialización: Aleatoria
+  \item Condición de paro: Encontrar la solución o evaluación de 10,000
+    fitness.
+\end{itemize}
+
+A partir del planteamiento realizado en clase, resolver este problema a través
+de algoritmos evolutivos.
+\begin{itemize}
+  \item Reporte la solución: genotipo, fenotipo y fitness.
+  \item Grafique la evolución de la mejor aptitud y fitness promedio.
+  \item Con su implementación resuelva el problema para $n=30$ reinas.
+\end{itemize}
+
+\section{Hormiga artificial}
+
+En 1991, David Jefferson y Robert Collins desarrollaron un mecanismo para
+``adaptar'' un organismo artificail a un ambiente dado. El objetivo es conducir
+una hormiga artificial a través de un camino irregular formado por rastros de
+comida.
+
+La hormiga artificial se desarrolla en una retícula toroide de $32\times 32$
+sobre el plano. La hormiga inicia su recorrido en la celda superior izquierda
+identificada con las coordenadas $(0, 0)$ viendo hacia el este. El sistema de
+coordenadas es $(r, c)$.
+
+El recorrido que intentará la hormiga se denomina ``Santa Fe Trail'', que
+consiste en 89 migajas de comida distribuidas sobre la retícula como se muestra
+en la figura $k$. Las celdas en negro con las migajas de comida y las celdas en
+amarillo son huecos donde se pierde el rastro. Exist huecos únicos, huecos
+dobles, huecos únicos en las orillas y huecos dobles en las orillas. Este
+rastros fue diseñado por Christopher Langton. Los números indican el conteo de
+las 89 migaas de comida.
+
+La hormiga artificial tiene una visión limitada del mundo. En particular la
+horimga tiene un sensor con el cual solo puede ver lo que hau inmediatamente en
+la celda adyacente en la dirección que está viendo.
+
+La hormiga puede ejecutar cualquiera de las siguientes acciones
+
+\begin{itemize}
+  \item \textsc{RIGTH}: gira la hormiga $90^{\circ}$ a la derecha, mateniendo la
+    posición
+  \item \textsc{LEFT}: gira la hormiga $90^{\circ}$ a la izquierda, manteniendo
+    la posición.
+  \item \textsc{MOVE}: mueve la hormiga hacia adelante en la dirección que está
+    ``viendo''. Cuando se mueve a la ceda sguiente se come la comida, eliminando
+    el rastro de comida.
+\end{itemize}
+
+La hormaiga también cuenta con las siguiente funciones
+
+\begin{itemize}
+  \item \textsc{IF-FOOD-AHEAD}: es un operador condicional de 2 argumentos.
+    Ejecuta una acción dependiendo si hay o no comida.
+  \item \textsc{PROGN2}: operador no condicional. Ejecuta dos instrucciones de
+    forma secuencial.
+  \item \textsc{PROGN3}: idem \textsc{PROG2}, pero con tres instrucciones.
+\end{itemize}
+
+El problema queda determinado por los siguientes puntos
+
+\begin{itemize}
+  \item Objetivo: Encontrar un programa que controle el funcionamiento de la
+    hormiga artificial tal que encuentre las 89 migajas de comida en el rastro.
+  \item Conjunto terminal: \textsc{LEFT, RIGHT,MOVE}
+  \item Conjunto función: \textsc{IF-FOOD-AHEAD, PROGN2, PROGN3}
+  \item Casos de fitness: un solo caso
+  \item Raw fitness: número de piezas de comida levantadas antes de 400
+    operaciones.
+  \item Parámetros: población de tamaño 500 y 51 generaciones.
+\end{itemize}
+
+Usando programación genétca, encuentra la mejor estrategia para que la hormiga
+artificial se coma todas lasmigajas en un tiempo dada.
+
+\begin{itemize}
+  \item Encontrar el programa más adecuado para resolver el problema.
+  \item Graficar al evolución del ``fitness'' del mejor individuo y
+    ``fitness'' promedio.
+\end{itemize}
+
+\end{document}
